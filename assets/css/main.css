@@ -5803,6 +5803,7 @@ button.close {
   margin: 0;
   padding: 0; }
 
+/*Navbar*/
 .container {
   width: 800px;
   overflow: hidden;
@@ -5810,83 +5811,132 @@ button.close {
 
 .side-bar {
   background: #FFA981;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1000;
   height: 100%;
   width: 210px;
   color: #fff;
   transition: margin-left 0.5s; }
-
-.side-bar ul {
-  list-style: none;
-  padding: 0px; }
-
-.side-bar ul li.menu-head {
-  font-family: "Lato", sans-serif;
-  padding: 40px 20px; }
-
-.side-bar ul li.menu-head a {
-  color: #fff;
-  text-decoration: none;
-  height: 50px; }
-
-.side-bar ul .menu-head a {
-  color: #fff;
-  text-decoration: none;
-  height: 50px; }
-
-.side-bar ul .menu li a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-table;
-  width: 100%;
-  padding: 25px 20px; }
-
-.side-bar ul .menu li a:hover {
-  border-left: 3px solid #ECECEA;
-  padding-left: 17px; }
-
-.side-bar ul .menu li a.active {
-  padding-left: 17px;
-  background: #D9853B;
-  border-left: 3px solid #ECECEA; }
-
-.side-bar ul .menu li a.active:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 7px solid #D9853B;
-  margin-top: -10px;
-  margin-left: 180px; }
-
-.content {
-  padding-left: 200px;
-  transition: padding-left 0.5s; }
+  .side-bar ul {
+    list-style: none;
+    padding: 0px; }
+    .side-bar ul li.menu-head {
+      font-family: "Lato", sans-serif;
+      padding: 40px 20px; }
+      .side-bar ul li.menu-head a {
+        color: #fff;
+        text-decoration: none;
+        height: 50px; }
+    .side-bar ul .menu-head a {
+      color: #fff;
+      text-decoration: none;
+      height: 50px; }
+    .side-bar ul .menu li a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-table;
+      width: 100%;
+      padding: 25px 20px;
+      font-size: 16px;
+      font-weight: bold; }
+    .side-bar ul .menu li a:hover {
+      border-left: 3px solid #ECECEA;
+      padding-left: 17px; }
+    .side-bar ul .menu li a.active {
+      padding-left: 17px;
+      background: #D9853B;
+      border-left: 3px solid #ECECEA; }
+    .side-bar ul .menu li a.active:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 7px solid #D9853B;
+      margin-top: -10px;
+      margin-left: 180px; }
 
 .active > .side-bar {
   margin-left: -150px;
   transition: margin-left 0.5s; }
 
-.active > .content {
-  padding-left: 50px;
-  transition: padding-left 0.5s; }
-
 .menu-lateral i {
   font-size: 25px; }
 
-.seccion-home {
-  position: absolute;
-  padding: 100px;
+/*secciones internas*/
+.seccion {
+  padding: 50px 100px;
   height: 100vh; }
-  .seccion-home h1 {
+  .seccion h1 {
     font-family: "PT Serif", serif;
     font-size: 60px;
     line-height: 40px;
     font-weight: bold;
     color: #313131; }
+
+#skills i {
+  font-size: 30px; }
+
+/*tabs*/
+.tab {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #888;
+  -webkit-font-smoothing: antialiased; }
+
+.tabs {
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%; }
+  .tabs li {
+    float: left;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    position: relative; }
+  .tabs a {
+    background-color: #eff0f2;
+    border-bottom: 1px solid #fff;
+    color: #888;
+    font-weight: 500;
+    display: block;
+    letter-spacing: 0;
+    outline: none;
+    padding: 0 20px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid #87d3b7; }
+
+.tabs_item {
+  display: none;
+  padding: 30px 0; }
+  .tabs_item h4 {
+    font-weight: bold;
+    color: #87d3b7;
+    font-size: 20px; }
+  .tabs_item img {
+    width: 200px;
+    float: left;
+    margin-right: 30px; }
+  .tabs_item:first-child {
+    display: block; }
+
+.current a {
+  color: #fff;
+  background: #87d3b7; }
 
 /*# sourceMappingURL=main.css.map */

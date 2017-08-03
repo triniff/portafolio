@@ -1,0 +1,7 @@
+@mixin titulos{
+	font-family: $fuente-esp;
+    font-size: 60px;
+    line-height: 40px;
+    font-weight: bold;
+    color: $color-texto-general;
+}

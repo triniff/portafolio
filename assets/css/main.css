@@ -5805,12 +5805,11 @@ button.close {
 
 /*Navbar*/
 .container {
-  width: 800px;
-  overflow: hidden;
+  width: 100%;
   display: inline-block; }
 
 .side-bar {
-  background: #FFA981;
+  background: #F23D3D;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -5868,75 +5867,137 @@ button.close {
 /*secciones internas*/
 .seccion {
   padding: 50px 100px;
-  height: 100vh; }
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center; }
   .seccion h1 {
     font-family: "PT Serif", serif;
     font-size: 60px;
     line-height: 40px;
     font-weight: bold;
-    color: #313131; }
+    color: #595449;
+    text-align: left; }
 
-#skills i {
-  font-size: 30px; }
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative; }
 
-/*tabs*/
-.tab {
-  padding-top: 50px;
-  margin-bottom: 20px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  width: 70%;
-  margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #888;
-  -webkit-font-smoothing: antialiased; }
+#header {
+  margin-top: -20px;
+  position: absolute;
+  height: 100vh; }
+  #header .titulo {
+    height: 350px;
+    margin-top: 50px; }
 
-.tabs {
-  display: table;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  width: 100%; }
-  .tabs li {
-    float: left;
-    line-height: 38px;
-    overflow: hidden;
-    padding: 0;
-    position: relative; }
-  .tabs a {
-    background-color: #eff0f2;
-    border-bottom: 1px solid #fff;
-    color: #888;
-    font-weight: 500;
-    display: block;
-    letter-spacing: 0;
-    outline: none;
-    padding: 0 20px;
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    border-bottom: 2px solid #87d3b7; }
-
-.tabs_item {
-  display: none;
-  padding: 30px 0; }
-  .tabs_item h4 {
-    font-weight: bold;
-    color: #87d3b7;
-    font-size: 20px; }
-  .tabs_item img {
+#about {
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  height: 100vh; }
+  #about .photo-perfil img {
+    border-radius: 100%;
     width: 200px;
-    float: left;
-    margin-right: 30px; }
-  .tabs_item:first-child {
-    display: block; }
+    height: 200px;
+    float: left; }
+  #about .descrip img {
+    width: 100px;
+    display: inline-block;
+    padding: 15px; }
+  #about p {
+    padding: 40px 0; }
 
-.current a {
+#skills {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F23D3D; }
+  #skills h2 {
+    font-family: "PT Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #595449;
+    padding-bottom: 40px;
+    color: #fff; }
+  #skills .icons {
+    padding: 25px 0; }
+    #skills .icons i {
+      padding: 40px;
+      font-size: 80px;
+      text-align: center;
+      color: #fff; }
+    #skills .icons img {
+      display: inline-block;
+      padding: 50px 15px; }
+
+#portafolio h2 {
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #595449;
+  padding-bottom: 40px; }
+#portafolio .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; }
+#portafolio .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+#portafolio .col-md-3:hover .image {
+  opacity: 0.3; }
+#portafolio .col-md-3:hover .middle {
+  opacity: 1; }
+#portafolio .text li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px; }
+#portafolio .text .btn-default {
+  background-color: #F23D3D;
   color: #fff;
-  background: #87d3b7; }
+  border: transparent; }
+#portafolio .text a i {
+  color: #F23D3D;
+  font-size: 30px; }
+#portafolio .text a:hover {
+  text-decoration: none; }
+
+#contacto {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F23D3D; }
+  #contacto h2 {
+    font-family: "PT Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #595449;
+    padding-bottom: 40px;
+    color: #fff; }
+  #contacto ul li {
+    display: inline-block; }
+    #contacto ul li a {
+      display: inline-block;
+      color: #fff;
+      font-size: 60px;
+      padding: 20px; }
+    #contacto ul li a:hover {
+      color: #E11D1D; }
+  #contacto p {
+    text-align: left;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 18px; }
+    #contacto p i {
+      padding-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */

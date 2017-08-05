@@ -5881,7 +5881,7 @@ button.close {
 
 #about {
   text-align: left;
-  height: 100vh; }
+  height: auto; }
   #about .photo-perfil img {
     border-radius: 100%;
     width: 100%;
@@ -5925,6 +5925,55 @@ button.close {
     #skills .icons img {
       display: inline-block;
       padding: 50px 15px; }
+  #skills .tab {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #888;
+    -webkit-font-smoothing: antialiased; }
+  #skills .tabs {
+    display: table;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100%; }
+    #skills .tabs li {
+      float: left;
+      line-height: 38px;
+      overflow: hidden;
+      padding: 0;
+      position: relative; }
+    #skills .tabs a {
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+      color: #888;
+      font-weight: 500;
+      display: block;
+      letter-spacing: 0;
+      outline: none;
+      padding: 0 20px;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-bottom: 2px solid #87d3b7; }
+  #skills .tabs_item {
+    display: none;
+    padding: 30px 0; }
+    #skills .tabs_item h4 {
+      font-weight: bold;
+      color: #87d3b7;
+      font-size: 20px; }
+    #skills .tabs_item:first-child {
+      display: block; }
+  #skills .current a {
+    color: #fff;
+    background: #87d3b7; }
 
 #portafolio h2 {
   font-family: "PT Serif", serif;
@@ -5955,15 +6004,20 @@ button.close {
   display: inline-block;
   text-decoration: none;
   padding: 10px; }
-#portafolio .text .btn-default {
-  background-color: #2A3A40;
-  color: #fff;
-  border: transparent; }
-#portafolio .text a i {
-  color: #2A3A40;
-  font-size: 30px; }
-#portafolio .text a:hover {
-  text-decoration: none; }
+  #portafolio .text li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold; }
+  #portafolio .text li a:hover {
+    background-color: #2A3A40; }
+  #portafolio .text li i {
+    font-size: 18px;
+    padding-right: 10px;
+    color: #fff; }
+  #portafolio .text li .btn-default {
+    padding: 10px 20px;
+    background-color: #84B0A4;
+    border: transparent; }
 #portafolio .img-portfolio {
   padding: 20px; }
 

@@ -100,7 +100,7 @@
 }
  #about{
         text-align: left;
-        height: 100vh;
+        height: auto;
         .photo-perfil img{
             border-radius: 100%;
             width: 100%;
@@ -145,6 +145,75 @@
         }
     }
 
+
+    // TAB ~~~~~~~~~~~~~~~ (.)(.)
+    .tab {
+        padding-top: 50px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-weight: 300;
+        color: #888;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .tabs {
+        display: table;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        width: 100%;
+        
+        li {
+            float: left;
+            line-height: 38px;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+        }
+
+        a {
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            color: #888;
+            font-weight: 500;
+            display: block;
+            letter-spacing: 0;
+            outline: none;
+            padding: 0 20px;
+            text-decoration: none;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            border-bottom: 2px solid $green;
+        }
+    }
+
+    .tabs_item {
+        display: none;
+        padding: 30px 0;
+
+        h4 {
+            font-weight: bold;
+            color: $green;
+            font-size: 20px;
+        }
+
+     
+
+        &:first-child {display: block;}
+    }
+
+    .current a {
+        color: #fff;
+        background: $green;
+    }
+
+    // END TAB ~~~~~~~~~~~~~~~ (.)(.)
+
 }
 #portafolio{
      h2{
@@ -182,19 +251,26 @@
             display: inline-block;
             text-decoration: none;
             padding: 10px;
+            a{
+                color: #fff;
+                 font-size: 18px;
+                 font-weight: bold;
+            }
+            a:hover{
+                background-color: $color-principal;
+            }
+            i{
+                font-size: 18px;
+                padding-right: 10px;
+                color: #fff;
+            }
+            .btn-default{
+                padding: 10px 20px;
+                background-color: $color-secundario;
+                border: transparent;
+            }
         }
-      .btn-default{
-        background-color: $color-principal;
-        color: #fff;
-        border: transparent;
-      }
-      a i{
-        color: $color-principal;
-        font-size: 30px;
-      }
-      a:hover{
-        text-decoration: none;
-      }
+
     }
     .img-portfolio{
         padding: 20px;

@@ -5937,9 +5937,9 @@ button.close {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); }
-  #proyectos .img-portfolio:hover .image {
+  #proyectos .img-portfolio:hover .image, #proyectos .img-portfolio:focus .image {
     opacity: 0.3; }
-  #proyectos .img-portfolio:hover .middle {
+  #proyectos .img-portfolio:hover .middle, #proyectos .img-portfolio:hover .middle:focus {
     opacity: 1; }
   #proyectos .text li {
     display: inline-block;

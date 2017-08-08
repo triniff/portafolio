@@ -151,11 +151,11 @@
       -ms-transform: translate(-50%, -50%)
     }
 
-    .img-portfolio:hover .image {
+    .img-portfolio:hover .image, .img-portfolio:focus .image {
       opacity: 0.3;
     }
 
-    .img-portfolio:hover .middle {
+    .img-portfolio:hover .middle, .img-portfolio:hover .middle:focus {
       opacity: 1;
     }
 

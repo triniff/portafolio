@@ -9,15 +9,25 @@
 .navbar-default{
     background-color: transparent;
     border: transparent;
+    padding: 10px 0;
     .navbar-brand{ 
         img{
             width: 50px;
             margin-top: -12px;
         }
     }
-    .navbar-nav .active a{
-        background-color: #07D8D9;
-        color: #fff;
+    .navbar-nav {
+        li{
+            background-color: #fff;
+        }
+        li a:hover{
+          color: #07D8D9;  
+        }
+        .active a{
+            background-color: #07D8D9;
+            color: #fff;
+            border-radius: 30px;
+        }
     }
 }
 .scroll-menu{
@@ -26,33 +36,40 @@
 
 /*Header*/
 #header{
-    height: 100vh;
     width: 100%;
-    text-align: center;
+    height: 100vh;
     margin: 0 auto;
-    padding-top: 10%;
-    .titulo{
-        position: absolute;
-        top: 75%;
-        left: 59%;
-        h1{
-            font-size: 20px;
-            text-align: left;
+    padding: 100px 0;
+    background-color: $color-crema;
+    h1{
+        padding-top: 50px;
+        font-size: 38px;
+        font-weight: 300;
+        span{
+            color: $color-secundario;
             font-weight: bold;
-            margin: 0;
-            padding: 0;
-            color: $color-texto-general;
-            line-height: 18px;
-             i{
-                font-size: 25px;
-             }
+        }
+    }
+    p{
+        font-weight: 300;
+        margin-left: 5%;
+        margin-bottom: 50px;
+    }
+    .arrow-wrap{
+        background-color: $color-secundario;
+        padding: 12px 15px;
+        border-radius: 100%;
+        i{
+             color: #fff;
         }
     }
 }
+ 
+
 /*About*/
  #about{
     @include contenedor-secciones();
-    background-color: $color-crema;
+    background-color: #FFFED2;
     .photo-perfil img{
         border-radius: 100%;
         width: 100%;
@@ -71,7 +88,7 @@
     }
     h2{
         @include subtitulos();
-        padding-bottom: 10px;
+        padding: 20px 0 10px;
         i{
             color: $color-secundario;
         }
@@ -85,13 +102,15 @@
     background-color: #E9F4E3;
     h2{
         @include subtitulos();
-        padding-bottom: 40px;
-        i{
-            color: $color-secundario;
-        }
+        padding-bottom: 70px;
     }
     .icons{
-        padding: 25px 0;
+        padding: 30px 0;
+        p{
+            text-align: left;
+            margin-left: 10%;
+            padding-bottom: 15px;
+        }
         i{
             padding:40px 20px;
             font-size: 60px;
@@ -99,7 +118,7 @@
         }
         img{
             display: inline-block;
-            padding: 50px 15px;
+            padding: 0 15px;
         }
     }
 }
@@ -110,7 +129,7 @@
         @include subtitulos();
         padding-bottom: 40px;
         i{
-            color: $color-crema;
+            color: $color-secundario;
         }
     }
     .image {
@@ -122,6 +141,7 @@
     }
 
     .middle {
+        width: 100%;
       transition: .5s ease;
       opacity: 0;
       position: absolute;
@@ -158,7 +178,7 @@
                 color: #fff;
             }
             .btn-default{
-                padding: 10px 20px;
+                padding: 10px;
                 background-color: $color-secundario;
                 border: transparent;
             }
@@ -179,7 +199,7 @@
         @include subtitulos();
         padding-bottom: 40px;
          i{
-            color: $color-crema;
+            color: $color-secundario;
         }
     }
     ul{
@@ -190,8 +210,8 @@
                 font-size: 60px;
                 padding: 20px;
             }
-            a:hover{
-                color: red;
+            a i:hover{
+                color:  $color-crema;
             }
         }
     }

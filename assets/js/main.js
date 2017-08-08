@@ -29,4 +29,11 @@ $(document).ready(function(){
      // bootstrap scrollspy function to go to the clicked and specific page section
      $('body').scrollspy({ target: '.navbar'});
 
+     //smooth scrolling
+     $(".arrow-wrap").click(function() {
+	var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 1200);
+    });
 });

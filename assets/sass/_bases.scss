@@ -1,224 +1,117 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
+    font-family: $fuente-general;
+    color: $color-texto-general;
 }
 /*Navbar*/
-.container{
-    width:100%;
-    display:inline-block;
-}
-.side-bar{
-    background: $color-texto-general;
-    position:fixed;
-    top: 0;
-    z-index: 1000;
-    height:100%;
-    width:210px;
-    color:#fff;
-    transition: margin-left 0.5s;
-
-    ul{
-        list-style:none;
-        padding:0px;
-
-        li.menu-head{
-            font-family: $fuente-general;
-            padding:40px 20px;
-
-            a{
-               color:#fff;
-                text-decoration:none;
-                height:50px; 
-            }
-        }
-        .menu-head {
-            a{
-                color:#fff;
-                text-decoration:none;
-                height:50px;
-            }
-        }
-
-        .menu{
-            li{
-                a{
-                    color:#fff;
-                    text-decoration:none;
-                    display:inline-table;
-                    width:100%;
-                    padding: 25px 20px;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-                a:hover{
-                    border-left:3px solid #ECECEA;    
-                    padding-left:17px; 
-                }
-            
-            }
+.navbar-default{
+    background-color: transparent;
+    border: transparent;
+    .navbar-brand{ 
+        img{
+            width: 50px;
+            margin-top: -12px;
         }
     }
-}
-
-.active > .side-bar{
-    margin-left:-150px;   
-    transition: margin-left 0.5s;
-}
-
-.menu-lateral {
-    i{
-        font-size: 25px;
+    .navbar-nav .active a{
+        background-color: #07D8D9;
+        color: #fff;
     }
 }
+.scroll-menu{
+   background-color: #fff;
+}
 
-/*secciones internas*/
-.seccion{
-    padding: 50px 100px;
-    height: auto;
-     margin: 0 auto;
-    text-align: center;
-}
-#particles-js{
-    margin-top: -20px;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    position: relative;
-}
+/*Header*/
 #header{
-    margin-top: -20px;
-    position: absolute;
     height: 100vh;
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
     .titulo{
-        padding: 120px 20px;
+        position: absolute;
+        top: 75%;
+        left: 59%;
         h1{
-            @include titulos();
+            font-size: 20px;
             text-align: left;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            color: $color-texto-general;
+            line-height: 18px;
+             i{
+                font-size: 25px;
+             }
         }
     }
 }
+/*About*/
  #about{
+    @include contenedor-secciones();
+    background-color: $color-crema;
+    .photo-perfil img{
+        border-radius: 100%;
+        width: 100%;
+        float: left;
+    }
+    .descrip img{
+        width: 120px;
+        display: inline-block;
+        padding: 15px;
+    }
+    p{
+        padding: 20px 0;
+        font-size: 16px;
+        line-height: 30px;
         text-align: left;
-        height: auto;
-        .photo-perfil img{
-            border-radius: 100%;
-            width: 100%;
-            float: left;
-        }
-        .descrip img{
-            width: 120px;
-            display: inline-block;
-            padding: 15px;
-        }
-        p{
-            padding: 20px 0;
-            font-size: 16px;
-            line-height: 30px;
-        }
-        h2{
-            @include subtitulos();
-            padding-bottom: 10px;
-            text-align: left;
     }
+    h2{
+        @include subtitulos();
+        padding-bottom: 10px;
+        i{
+            color: $color-secundario;
+        }
     }
+}
+/*Skills*/
 #skills{
+    @include contenedor-secciones();
     margin: 0 auto;
     text-align: center;
-    background-color: $color-secundario;
+    background-color: #E9F4E3;
     h2{
         @include subtitulos();
         padding-bottom: 40px;
-        color: #fff;
+        i{
+            color: $color-secundario;
+        }
     }
     .icons{
         padding: 25px 0;
         i{
-            padding:40px;
-            font-size: 80px;
+            padding:40px 20px;
+            font-size: 60px;
             text-align: center;
-            color: #fff;
         }
         img{
             display: inline-block;
             padding: 50px 15px;
         }
     }
-
-
-    // TAB ~~~~~~~~~~~~~~~ (.)(.)
-    .tab {
-        padding-top: 50px;
-        margin-bottom: 20px;
-        position: relative;
-        overflow: hidden;
-        width: 70%;
-        margin: 0 auto;
-        line-height: 1.5;
-        font-weight: 300;
-        color: #888;
-        -webkit-font-smoothing: antialiased;
-    }
-
-    .tabs {
-        display: table;
-        position: relative;
-        overflow: hidden;
-        margin: 0;
-        width: 100%;
-        
-        li {
-            float: left;
-            line-height: 38px;
-            overflow: hidden;
-            padding: 0;
-            position: relative;
-        }
-
-        a {
-            background-color: #fff;
-            border-bottom: 1px solid #fff;
-            color: #888;
-            font-weight: 500;
-            display: block;
-            letter-spacing: 0;
-            outline: none;
-            padding: 0 20px;
-            text-decoration: none;
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-            border-bottom: 2px solid $green;
-        }
-    }
-
-    .tabs_item {
-        display: none;
-        padding: 30px 0;
-
-        h4 {
-            font-weight: bold;
-            color: $green;
-            font-size: 20px;
-        }
-
-     
-
-        &:first-child {display: block;}
-    }
-
-    .current a {
-        color: #fff;
-        background: $green;
-    }
-
-    // END TAB ~~~~~~~~~~~~~~~ (.)(.)
-
 }
-#portafolio{
+#proyectos{
+    @include contenedor-secciones();
+    background-color: #C8F0DE;
      h2{
         @include subtitulos();
         padding-bottom: 40px;
+        i{
+            color: $color-crema;
+        }
     }
     .image {
       opacity: 1;
@@ -257,7 +150,7 @@
                  font-weight: bold;
             }
             a:hover{
-                background-color: $color-principal;
+                background-color: $color-texto-general;
             }
             i{
                 font-size: 18px;
@@ -278,31 +171,32 @@
 }
 
 #contacto{
+    @include contenedor-secciones();
     margin: 0 auto;
     text-align: center;
-    background-color: $color-secundario;
+    background-color: #99F0DE;
     h2{
         @include subtitulos();
         padding-bottom: 40px;
-        color: #fff;
+         i{
+            color: $color-crema;
+        }
     }
     ul{
         li{
             display: inline-block;
             a{
                 display: inline-block;
-                color: #fff;
                 font-size: 60px;
                 padding: 20px;
             }
             a:hover{
-                color: $color-principal;
+                color: red;
             }
         }
     }
     p{
         text-align: left;
-        color: #fff;
         padding: 8px 10px;
         font-size: 18px;
         display: inline-block;

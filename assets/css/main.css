@@ -5831,11 +5831,14 @@ button.close {
   height: 100vh;
   margin: 0 auto;
   padding: 100px 0;
-  background-color: #FFFEE7; }
+  background-color: #FFFEEE; }
   #header h1 {
-    padding-top: 50px;
+    padding-top: 5%;
     font-size: 38px;
     font-weight: 300; }
+    @media screen and (max-width: 400px) {
+      #header h1 {
+        font-size: 25px; } }
     #header h1 span {
       color: #07D8D9;
       font-weight: bold; }
@@ -5985,7 +5988,7 @@ button.close {
       font-size: 60px;
       padding: 20px; }
     #contacto ul li a i:hover {
-      color: #FFFEE7; }
+      color: #FFFEEE; }
   #contacto p {
     text-align: left;
     padding: 8px 10px;

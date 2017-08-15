@@ -10,6 +10,10 @@
     background-color: transparent;
     border: transparent;
     padding: 10px 0;
+    @media screen and (max-width: $break-small) {
+        background-color: #fff;
+        text-align: left;
+    } 
     .navbar-brand{ 
         img{
             width: 50px;
@@ -17,18 +21,29 @@
         }
     }
     .navbar-nav {
-        li{
-            background-color: #fff;
-        }
         li a:hover{
-          color: #07D8D9;  
+          color: $color-secundario;  
         }
         .active a{
-            background-color: #07D8D9;
+            background-color:$color-secundario;
             color: #fff;
             border-radius: 30px;
         }
     }
+}
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse{
+    border: none;
+
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: $color-secundario; 
+    .icon-bar{ background-color: #fff;}
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: $color-secundario;
+    .icon-bar { background-color: $color-secundario;}
 }
 .scroll-menu{
    background-color: #fff;
@@ -42,7 +57,7 @@
     padding: 100px 0;
     background-color: $color-crema;
     h1{
-        padding-top: 5%;
+        padding-top: 4%;
         font-size: 38px;
         font-weight: 300;
          @media screen and (max-width: $break-small) {
@@ -57,13 +72,17 @@
         font-weight: 300;
         margin-left: 5%;
         margin-bottom: 50px;
+        @media screen and (max-width: $break-small) {
+            margin-bottom: 20px;
+        } 
     }
     .arrow-wrap{
-        background-color: $color-secundario;
-        padding: 12px 15px;
-        border-radius: 100%;
         i{
-             color: #fff;
+            color: #fff;
+            font-size: 30px;
+            background-color: $color-secundario;
+            padding: 15px;
+            border-radius: 100%;    
         }
     }
 }
@@ -75,8 +94,7 @@
     background-color: #FFFED2;
     .photo-perfil img{
         border-radius: 100%;
-        width: 100%;
-        float: left;
+        text-align: center;
     }
     .descrip img{
         width: 120px;
@@ -110,8 +128,7 @@
     .icons{
         padding: 30px 0;
         p{
-            text-align: left;
-            margin-left: 10%;
+            font-size: 18px;
             padding-bottom: 15px;
         }
         i{
@@ -122,9 +139,13 @@
         img{
             display: inline-block;
             padding: 0 15px;
+            @media screen and (max-width: $break-small) {
+            padding: 5px;
+          }
         }
     }
 }
+/*Proyectos*/
 #proyectos{
     @include contenedor-secciones();
     background-color: #C8F0DE;
@@ -197,7 +218,10 @@
     @include contenedor-secciones();
     margin: 0 auto;
     text-align: center;
-    background-color: #99F0DE;
+    /*background-color: #99F0DE;*/
+    background-image: url("../img/fondo-contacto.jpg");
+    background-size: cover;
+    background-position: bottom left;
     h2{
         @include subtitulos();
         padding-bottom: 40px;
@@ -212,6 +236,10 @@
                 display: inline-block;
                 font-size: 60px;
                 padding: 20px;
+                @media screen and (max-width: $break-small) {
+                    font-size: 35px;
+                    padding-right: 10px;
+                } 
             }
             a i:hover{
                 color:  $color-crema;
@@ -223,8 +251,15 @@
         padding: 8px 10px;
         font-size: 18px;
         display: inline-block;
+        @media screen and (max-width: $break-small) {
+            font-size: 15px;
+        }
         i{
             padding-right: 10px;
+            @media screen and (max-width: $break-small) {
+                font-size: 13px;
+                padding-right: 5px;
+          } 
         }
     }
 }

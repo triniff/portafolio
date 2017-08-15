@@ -5810,17 +5810,32 @@ button.close {
   background-color: transparent;
   border: transparent;
   padding: 10px 0; }
+  @media screen and (max-width: 400px) {
+    .navbar-default {
+      background-color: #fff;
+      text-align: left; } }
   .navbar-default .navbar-brand img {
     width: 50px;
     margin-top: -12px; }
-  .navbar-default .navbar-nav li {
-    background-color: #fff; }
   .navbar-default .navbar-nav li a:hover {
     color: #07D8D9; }
   .navbar-default .navbar-nav .active a {
     background-color: #07D8D9;
     color: #fff;
     border-radius: 30px; }
+
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+  border: none; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #07D8D9; }
+  .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fff; }
+
+.navbar-default .navbar-toggle {
+  border-color: #07D8D9; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #07D8D9; }
 
 .scroll-menu {
   background-color: #fff; }
@@ -5833,7 +5848,7 @@ button.close {
   padding: 100px 0;
   background-color: #FFFEEE; }
   #header h1 {
-    padding-top: 5%;
+    padding-top: 4%;
     font-size: 38px;
     font-weight: 300; }
     @media screen and (max-width: 400px) {
@@ -5846,12 +5861,15 @@ button.close {
     font-weight: 300;
     margin-left: 5%;
     margin-bottom: 50px; }
-  #header .arrow-wrap {
+    @media screen and (max-width: 400px) {
+      #header p {
+        margin-bottom: 20px; } }
+  #header .arrow-wrap i {
+    color: #fff;
+    font-size: 30px;
     background-color: #07D8D9;
-    padding: 12px 15px;
+    padding: 15px;
     border-radius: 100%; }
-    #header .arrow-wrap i {
-      color: #fff; }
 
 /*About*/
 #about {
@@ -5860,8 +5878,7 @@ button.close {
   background-color: #FFFED2; }
   #about .photo-perfil img {
     border-radius: 100%;
-    width: 100%;
-    float: left; }
+    text-align: center; }
   #about .descrip img {
     width: 120px;
     display: inline-block;
@@ -5879,6 +5896,9 @@ button.close {
     padding: 0;
     margin: 0;
     padding: 20px 0 10px; }
+    @media screen and (max-width: 400px) {
+      #about h2 {
+        padding: 15px 0; } }
     #about h2 i {
       color: #07D8D9; }
 
@@ -5897,11 +5917,13 @@ button.close {
     padding: 0;
     margin: 0;
     padding-bottom: 70px; }
+    @media screen and (max-width: 400px) {
+      #skills h2 {
+        padding: 15px 0; } }
   #skills .icons {
     padding: 30px 0; }
     #skills .icons p {
-      text-align: left;
-      margin-left: 10%;
+      font-size: 18px;
       padding-bottom: 15px; }
     #skills .icons i {
       padding: 40px 20px;
@@ -5910,7 +5932,11 @@ button.close {
     #skills .icons img {
       display: inline-block;
       padding: 0 15px; }
+      @media screen and (max-width: 400px) {
+        #skills .icons img {
+          padding: 5px; } }
 
+/*Proyectos*/
 #proyectos {
   padding: 10% 0;
   min-height: 100vh;
@@ -5923,6 +5949,9 @@ button.close {
     padding: 0;
     margin: 0;
     padding-bottom: 40px; }
+    @media screen and (max-width: 400px) {
+      #proyectos h2 {
+        padding: 15px 0; } }
     #proyectos h2 i {
       color: #07D8D9; }
   #proyectos .image {
@@ -5970,7 +5999,10 @@ button.close {
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  background-color: #99F0DE; }
+  /*background-color: #99F0DE;*/
+  background-image: url("../img/fondo-contacto.jpg");
+  background-size: cover;
+  background-position: bottom left; }
   #contacto h2 {
     font-size: 25px;
     font-weight: 300;
@@ -5979,6 +6011,9 @@ button.close {
     padding: 0;
     margin: 0;
     padding-bottom: 40px; }
+    @media screen and (max-width: 400px) {
+      #contacto h2 {
+        padding: 15px 0; } }
     #contacto h2 i {
       color: #07D8D9; }
   #contacto ul li {
@@ -5987,6 +6022,10 @@ button.close {
       display: inline-block;
       font-size: 60px;
       padding: 20px; }
+      @media screen and (max-width: 400px) {
+        #contacto ul li a {
+          font-size: 35px;
+          padding-right: 10px; } }
     #contacto ul li a i:hover {
       color: #FFFEEE; }
   #contacto p {
@@ -5994,7 +6033,14 @@ button.close {
     padding: 8px 10px;
     font-size: 18px;
     display: inline-block; }
+    @media screen and (max-width: 400px) {
+      #contacto p {
+        font-size: 15px; } }
     #contacto p i {
       padding-right: 10px; }
+      @media screen and (max-width: 400px) {
+        #contacto p i {
+          font-size: 13px;
+          padding-right: 5px; } }
 
 /*# sourceMappingURL=main.css.map */

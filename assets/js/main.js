@@ -1,3 +1,13 @@
+
+window.onload = function(){
+  setTimeout(function(){
+    var loader = document.getElementsByClassName("loader")[0];
+    loader.className="loader fadeout" ;//loading page
+    setTimeout(function(){loader.style.display="none"},1000)
+    $(".secciones").show();
+  },1000)
+}//loading page 1s
+
 $(document).ready(function(){
 	window.addEventListener('scroll', function () {
    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
